@@ -348,7 +348,7 @@ class ME_WC {
 
 				// Vendor.
 				if ( isset( $this->settings['vendor'] ) && 'not_set' !== $this->settings['vendor'] ) {
-					$vendor = $offer->get_attribute( 'pa_' . $this->settings['vendor'] );
+					$vendor = $product->get_attribute( 'pa_' . $this->settings['vendor'] );
 					if ( $vendor ) {
 						$yml .= '        <vendor>' . wp_strip_all_tags( $vendor ) . '</vendor>' . PHP_EOL;
 					}
